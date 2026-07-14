@@ -155,7 +155,7 @@ const Navbar = () => {
                         <ThemeToggle value={icons.darkMode} />
 
                         <Link href="/login">
-                            <button className="btn btn-outline border-indigo-600 text-indigo-600 dark:border-indigo-400 dark:text-indigo-300 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300">
+                            <button className="btn btn-outline border-0 text-indigo-600 dark:border-indigo-400 dark:text-white hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300">
                                 Login
                             </button>
                         </Link>

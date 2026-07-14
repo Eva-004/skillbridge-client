@@ -1,10 +1,17 @@
 'use client'
 import { Switch } from '@heroui/react';
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { ComponentType, useEffect, useState } from 'react';
 
+interface ThemeToggleProps {
+  value: {
+    off: ComponentType<{ className?: string }>;
+    on: ComponentType<{ className?: string }>;
+    selectedControlClass: string;
+  };
+}
 
-const ThemeToggle = ({value}) => {
+const ThemeToggle = ({ value }: ThemeToggleProps) => {
   const {theme,setTheme}=useTheme();
       
    const [mounted, setMounted] = useState(false);
