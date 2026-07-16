@@ -1,6 +1,7 @@
 import { betterAuth } from "better-auth";
 import { MongoClient } from "mongodb";
 import { mongodbAdapter } from "better-auth/adapters/mongodb";
+import { jwt } from "better-auth/plugins";
 
 const client = new MongoClient(process.env.MONGO_URI as string);
 const db = client.db("skillbridge");
@@ -19,4 +20,14 @@ export const auth = betterAuth({
             clientSecret: process.env.GOOGLE_CLIENT_SECRET as string, 
         }, 
     },
+    session:{
+      cookieCache:{
+        enabled: true,
+        strategy: 'jwt',
+        maxAge: 7 * 14 * 60 * 60
+      }
+    },
+      plugins: [
+        jwt(), 
+    ]
 });

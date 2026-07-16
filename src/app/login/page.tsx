@@ -14,15 +14,15 @@ import {
     TextField,
 } from "@heroui/react";
 import Link from "next/link";
-import { useSearchParams, useRouter } from "next/navigation";
+import {  useRouter } from "next/navigation";
 import { FcGoogle } from "react-icons/fc";
 import { HiLightningBolt } from "react-icons/hi";
 import { toast } from "react-toastify";
 
 const LoginPage = () => {
-    const searchParams = useSearchParams();
+    
     const router = useRouter();
-    const redirect = searchParams.get('redirect') || '/';
+    const redirect = '/';
 
     
     const formRef = useRef<HTMLFormElement>(null);

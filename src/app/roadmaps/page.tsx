@@ -51,7 +51,7 @@ const RoadmapsPage = async ({
             <div className="absolute top-0 left-1/4 h-96 w-96 rounded-full bg-indigo-600/10 blur-3xl pointer-events-none" />
             <div className="absolute top-1/3 right-1/4 h-96 w-96 rounded-full bg-cyan-500/5 blur-3xl pointer-events-none" />
 
-            <div className="w-11/12 mx-auto max-w-[1400px] relative z-50">
+            <div className="w-11/12 mx-auto max-w-[1400px] ">
                 {/* Header Section */}
                 <div className="text-center space-y-3 mb-10">
                     <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
