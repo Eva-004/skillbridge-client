@@ -69,7 +69,7 @@ const ProfileDropdown = ({
             textValue="Profile"
             className="rounded-xl px-3 py-2.5 hover:bg-white/5 data-[hover=true]:bg-white/5 text-slate-300 hover:text-cyan-400 transition-colors"
           >
-            <Label className="cursor-pointer font-medium text-sm">Profile Dashboard</Label>
+            <Label className="cursor-pointer font-medium text-sm">Profile</Label>
           </Dropdown.Item>
 
           {/* Logout Button */}

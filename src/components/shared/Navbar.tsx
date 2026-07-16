@@ -14,7 +14,7 @@ const Navbar = () => {
     const links = (
         <>
             <li><NavLink href="/">Home</NavLink></li>
-            <li><NavLink href="/explore">Explore Roadmaps</NavLink></li>
+            <li><NavLink href="/roadmaps">Explore Roadmaps</NavLink></li>
             <li><NavLink href="/about">About</NavLink></li>
             <li><NavLink href="/contact">Contact</NavLink></li>
         </>
@@ -22,7 +22,8 @@ const Navbar = () => {
 
     const userSpecificRoute = (
         <>
-            <li><NavLink href="/dashboard">Dashboard</NavLink></li>
+            <li><NavLink href="/add-roadmaps">Add Roadmaps</NavLink></li>
+            <li><NavLink href="/manage-roadmaps">Manage Roadmaps</NavLink></li>
         </>
     );
 
@@ -134,7 +135,7 @@ const Navbar = () => {
                             className="object-cover"
                         />
 
-                        <h2 className="text-xl md:text-3xl font-extrabold bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 bg-clip-text text-transparent">
+                        <h2 className="text-xl md:text-2.5xl font-extrabold bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 bg-clip-text text-transparent">
                             SkillBridge AI
                         </h2>
                     </Link>
